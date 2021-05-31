@@ -11,8 +11,8 @@ class BukusTableSeeder extends Seeder
      */
     public function run()
     {
-        
-        \App\Buku::truncate();
+        //DB::statement('SET FOREIGN_KEY_CHECKS=0;');
+        //\App\Buku::truncate();
         \App\Buku::insert([
             [
               'id'  			=> 1,

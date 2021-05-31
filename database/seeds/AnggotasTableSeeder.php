@@ -12,8 +12,8 @@ class AnggotasTableSeeder extends Seeder
     public function run()
     {
 
-        
-        \App\Anggota::truncate();
+        //DB::statement('SET FOREIGN_KEY_CHECKS=0;');
+        //\App\Anggota::truncate();
         \App\Anggota::insert([
             [
               'id'  			=> 1,
